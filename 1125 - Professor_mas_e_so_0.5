@@ -1,0 +1,15 @@
+# Dois números reais que podem variar de 0.00 à 10.00, um por linha, que representam a nota de trabalhos e a nota da prova regular, respectivamente.
+# Uma frase indicando a situação do aluno a quem pertencem as notas da entrada. 
+# A situação pode ser 'aprovado', 'reprovado' ou 'talvez com a sub', sem os apóstrofos e completamente em minúsculo. Veja nos exemplos como a saída deve ser exibida.
+
+nota_trabalhos = float(input())
+nota_prova = float(input())
+
+media = (nota_trabalhos + nota_prova)/2
+
+if media >= 6:
+    print('aprovado')
+elif (media < 6 and nota_trabalhos >= 2.00):
+    print('talvez com a sub')
+else:
+    print('reprovado')
